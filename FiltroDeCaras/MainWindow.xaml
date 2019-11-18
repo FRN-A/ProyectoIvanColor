@@ -1,0 +1,34 @@
+﻿<Window x:Class="FiltroDeCaras.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FiltroDeCaras"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="635.5" Width="1000">
+    <Grid>
+        <Button x:Name="btn_Capturar" Content="Capturar" HorizontalAlignment="Left" Margin="818,536,0,0" VerticalAlignment="Top" Width="94" Height="33" Click="btn_Capturar_Click" />
+        <Image x:Name="imgOriginal" HorizontalAlignment="Left" Height="307" Margin="10,10,0,0" VerticalAlignment="Top" Width="470" RenderTransformOrigin="0.131,0.509"/>
+        <Image x:Name="imgResult" HorizontalAlignment="Left" Height="305" Margin="512,10,0,0" VerticalAlignment="Top" Width="470" />
+        <Label x:Name="lbl_HL" Content="0" HorizontalAlignment="Left" Margin="631,394,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_SL" Content="0" HorizontalAlignment="Left" Margin="631,428,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_VL" Content="0" HorizontalAlignment="Left" Margin="631,467,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_HH" Content="0" HorizontalAlignment="Left" Margin="677,394,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_SH" Content="0" HorizontalAlignment="Left" Margin="677,428,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbl_VH" Content="0" HorizontalAlignment="Left" Margin="677,467,0,0" VerticalAlignment="Top"/>
+        <Slider x:Name="sld_HL" HorizontalAlignment="Left" Margin="408,399,0,0" VerticalAlignment="Top" Width="218" ValueChanged="Slider_ValueChanged" SmallChange="1" Maximum="255"/>
+        <Slider x:Name="sld_SL" HorizontalAlignment="Left" Margin="408,433,0,0" VerticalAlignment="Top" Width="218" ValueChanged="Slider_ValueChanged" SmallChange="1" Maximum="255"/>
+        <Slider x:Name="sld_VL" HorizontalAlignment="Left" Margin="408,471,0,0" VerticalAlignment="Top" Width="218" ValueChanged="Slider_ValueChanged" SmallChange="1" Maximum="255"/>
+        <Slider x:Name="sld_HH" HorizontalAlignment="Left" Margin="712,399,0,0" VerticalAlignment="Top" Width="218" ValueChanged="Slider_ValueChanged" SmallChange="1" Maximum="255" Value="255"/>
+        <Slider x:Name="sld_SH" HorizontalAlignment="Left" Margin="712,433,0,0" VerticalAlignment="Top" Width="218" ValueChanged="Slider_ValueChanged" SmallChange="1" Maximum="255" Value="255"/>
+        <Slider x:Name="sld_VH" HorizontalAlignment="Left" Margin="712,471,0,0" VerticalAlignment="Top" Width="218" ValueChanged="Slider_ValueChanged" SmallChange="1" Maximum="255" Value="255"/>
+        <Image x:Name="imgHSV" HorizontalAlignment="Left" Height="208" Margin="64,343,0,0" VerticalAlignment="Top" Width="226" RenderTransformOrigin="0.131,0.509" Source="hsv.jpg"/>
+        <Label Content="Min" HorizontalAlignment="Left" Margin="623,364,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Max" HorizontalAlignment="Left" Margin="669,364,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="H:" HorizontalAlignment="Left" Margin="377,394,0,0" VerticalAlignment="Top"/>
+        <Label Content="S:" HorizontalAlignment="Left" Margin="377,429,0,0" VerticalAlignment="Top"/>
+        <Label Content="V:" HorizontalAlignment="Left" Margin="377,467,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_cambiar" Content="Cambiar" HorizontalAlignment="Left" Margin="876,322,0,0" VerticalAlignment="Top" Width="94" Height="33" Click="btn_cambiar_Click"  />
+
+    </Grid>
+</Window>
